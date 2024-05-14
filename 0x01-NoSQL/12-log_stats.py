@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Write a Python script that provides some stats about Nginx logs stored in MongoDB:
+Write a Python script that provides some stats
+about Nginx logs stored in MongoDB:
 
 Database: logs
 Collection: nginx
@@ -32,7 +33,6 @@ def print_nginx_request_logs(nginx_collection):
         nginx_collection.find({'method': 'GET', 'path': '/status'})
     ))
     print('{} status check'.format(status_checks_count))
-
 
 
 def run_db():
